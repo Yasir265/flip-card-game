@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Memory Mission 🌌 Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🪐 Space Memory Mission 🌌</h1>
+    <div class="stats">
+      <span>Moves: <span id="moves">0</span></span>
+      <span>Time: <span id="timer">0</span>s</span>
+      <span>Best: <span id="bestScore">∞</span></span>
+    </div>
+  </header>
+
+  <div class="game-grid" id="grid"></div>
+
+  <div id="win-screen">
+    <h2>🚀 Mission Complete! 🎉</h2>
+    <p id="win-text">New Best Score!</p>
+    <button onclick="resetGame()">New Mission</button>
+  </div>
+
+  <canvas id="confetti-canvas"></canvas>
+
+  <script src="app.js"></script>
+</body>
+</html>
